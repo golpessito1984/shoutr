@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
-  root to: "home#show"
+
+  constraints Clearance::Constraints::SignedIn.new do
+    root to: "dashboard#show"
+  end
+
+  root to: "home#show", as: nil
   resources :passwords, controller: "clearance/passwords", only: [:create, :new]
   resource :session, only: [:create]
 
