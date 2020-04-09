@@ -1,0 +1,23 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  database: shoutr_development
+  username: shoutr
+  password: shoutr
+  port: <%= ENV['DB_PORT']%>
+  host: <%= ENV['DB_HOST'] %>
+  min_messages: warning
+  pool: <%= Integer(ENV.fetch("DB_POOL", 5)) %>
+  reaping_frequency: <%= Integer(ENV.fetch("DB_REAPING_FREQUENCY", 10)) %>
+  timeout: 5000
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+  database:  shoutr_test
+
+production:
+  <<: *default
+  database: shoutr_production

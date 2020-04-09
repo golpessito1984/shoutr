@@ -1,0 +1,52 @@
+version: '3'
+
+services:
+  teste-postgres-compose:
+    image: "postgres:11"
+    #Check redis is ok pg cli --> docker run -it --rm --network host postgres psql -d fluxback_development -h localhost -U postgres
+    restart: always
+    container_name: "postgres11"
+    #   Work in localhost
+    network_mode: host
+    environment:
+      - POSTGRES_USER=shoutr
+      - POSTGRES_PASSWORD=shoutr
+      - POSTGRES_DB=shoutr
+      - N=100
+    ports:
+      - "15432:5432"
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+
+  teste-pgadmin-compose:
+    image: dpage/pgadmin4
+    restart: always
+    container_name: "pgadmin"
+    #   Work in localhost
+    network_mode: host
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "admin@gmail.com"
+      PGADMIN_DEFAULT_PASSWORD: "admin"
+    ports:
+      - "16543:80"
+    depends_on:
+      - teste-postgres-compose
+
+  redis:
+    image: 'bitnami/redis:5.0'
+    # Check redis is ok with redis cli --> docker run -it --network host --rm redis redis-cli -h localhost
+    restart: always
+    container_name: "redis"
+    network_mode: host
+    environment:
+      # ALLOW_EMPTY_PASSWORD is recommended only for development.
+      - ALLOW_EMPTY_PASSWORD=yes
+      - REDIS_DISABLE_COMMANDS=FLUSHDB,FLUSHALL
+    ports:
+      - '6379:6379'
+    volumes:
+      - 'redis_data:/bitnami/redis/data'
+
+volumes:
+  redis_data:
+    driver: local
