@@ -7,6 +7,10 @@ Rails.application.configure do
   # Authentication Clearance gem
   config.action_mailer.default_url_options = { host: 'localhost:3000' }
   # Settings specified here will take precedence over those in config/application.rb.
+  #
+  config.middleware.use Clearance::BackDoor do |username|
+    Clearance.configuration.user_model.find_by(username: username)
+  end
 
   config.cache_classes = false
 
