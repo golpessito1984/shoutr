@@ -45,7 +45,9 @@ end
 group :test do
   gem 'capybara'
   gem 'database_cleaner'
+  gem 'factory_bot_rails'
   gem 'factory_girl'
+  gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
