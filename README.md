@@ -21,6 +21,7 @@ Things you may want to cover:
 * System dependencies
   ```
   postgresql ( database )
+  clearance gem ( Authentication Framework )
   ```
 
 * Configuration
