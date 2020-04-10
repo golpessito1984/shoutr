@@ -3,4 +3,7 @@ class Shout < ApplicationRecord
   validates :user, presence: true
 
   belongs_to :user
+  delegate :username, to: :user
+
+  default_scope { order(created_at: :desc) }
 end
