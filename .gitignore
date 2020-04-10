@@ -25,7 +25,9 @@
 
 /public/packs
 /public/packs-test
+/public/system
 /node_modules
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
