@@ -2,4 +2,7 @@
   <%= avatar(@user) %>
 </div>
 <h1><%= @user.username %></h1>
+
+<%= follow_button(@user) %>
+
 <%= render @shouts %>
