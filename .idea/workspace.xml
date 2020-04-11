@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="978af1d0-5acc-47ba-802c-e2aa7431aa50" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/controllers/followers_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/followers/index.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/users/_user.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/followed_users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/followed_users_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/following_relationship.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/following_relationship.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +147,7 @@
       <updated>1586419479112</updated>
       <workItem from="1586419482213" duration="13421000" />
       <workItem from="1586500839344" duration="16022000" />
-      <workItem from="1586592739116" duration="6590000" />
+      <workItem from="1586592739116" duration="8468000" />
     </task>
     <servers />
   </component>
@@ -152,10 +155,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="366" y="201" width="690" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586513968451">
+    <state x="366" y="201" width="690" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586600464605">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="366" y="201" width="690" height="390" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1299.741@67.27.1299.741" timestamp="1586513968451" />
+    <state x="366" y="201" width="690" height="390" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1299.741@67.27.1299.741" timestamp="1586600464605" />
     <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586424472384">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
