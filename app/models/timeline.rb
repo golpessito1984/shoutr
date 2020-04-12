@@ -1,15 +1,21 @@
 class Timeline
-  def initialize(user)
-    @user = user
+  def initialize(users, scope = Shout) # dependency injection
+    @users = users
+    @scope = scope
   end
 
   def shouts
-    Shout.where(user_id: timeline_ids)
+    scope.where(user_id: users).
+          order(created_at: :desc)
+  end
+
+  def to_partial_path
+    "timelines/timeline"
   end
 
   private
 
-  attr_reader :user
+  attr_reader :users, :scope
 
   def timeline_ids
     user.followed_user_ids + [user.id]
