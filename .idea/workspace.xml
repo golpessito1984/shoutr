@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="978af1d0-5acc-47ba-802c-e2aa7431aa50" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/dashboard_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/dashboard_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/shout_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/shout_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/dashboard/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/dashboard/show.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +143,8 @@
       <updated>1586419479112</updated>
       <workItem from="1586419482213" duration="13421000" />
       <workItem from="1586500839344" duration="16022000" />
-      <workItem from="1586592739116" duration="8887000" />
+      <workItem from="1586592739116" duration="11801000" />
+      <workItem from="1586677040505" duration="951000" />
     </task>
     <servers />
   </component>
@@ -163,6 +164,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1586419578684" />
+    <state x="370" y="222" key="run.anything.popup" timestamp="1586677717565">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="370" y="222" key="run.anything.popup/67.27.1299.741@67.27.1299.741" timestamp="1586677717565" />
     <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1586427871803">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
