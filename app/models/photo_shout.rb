@@ -6,8 +6,9 @@ class PhotoShout < ApplicationRecord
                         size: { in: 0 .. 10.megabytes },
                         presence: true
 
-  def file_name_withou_extension
 
+  searchable do
+    text :image_file_name
   end
 
 end
