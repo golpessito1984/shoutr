@@ -22,6 +22,7 @@ Things you may want to cover:
   ```
   postgresql ( database )
   clearance gem ( Authentication Framework )
+  sunspot_rails ( Search engine )
   ```
 
 * Configuration

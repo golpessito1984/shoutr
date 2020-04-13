@@ -19,6 +19,7 @@
     <% flash.each do |name, message| %>
       <p><i><%= "#{name}: #{message}" %></i></p>
     <% end %>
+    <%= render "search" %>
     <%= yield %>
   </body>
 </html>
